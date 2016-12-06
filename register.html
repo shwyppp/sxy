@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>随享游网-会员注册</title>
+<link href="css/master.css" rel="stylesheet">
+<link href="font/iconfont.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script>
+$(function(){
+	$.validator.setDefaults({
+  		debug: false,
+  		success: "valid"
+	});
+	
+	$('#reg').validate({
+			rules:{
+				
+			   	
+				account:{
+					required:true,
+					rangelength:[6,12]
+				},
+				email:{
+					required:true,
+					email:true	
+				},
+				   password: {
+				required: true,
+				rangelength:[6,12]
+			   },
+			   confirm_password: {
+				required: true,
+				rangelength:[6,12],
+				equalTo: "#password"
+			   },	
+				
+
+			},
+			messages:{
+				account:{
+					required:'账号必须填写'	,
+					rangelength:$.validator.format("账号长度必须在6-12字符之间")	
+				},
+				password: {
+			required: "请填写密码",
+			rangelength: jQuery.validator.format("密码长度必须在6-12字符之间"),
+		   },
+		   		confirm_password: {
+			required: "请确认密码",
+			rangelength: jQuery.validator.format("密码长度必须在6-12字符之间"),
+			equalTo: "两次输入密码不一致不一致"
+		   },
+				email: {
+			required: "请填写Email地址",
+			email: "请输入正确的email地址",
+		   },
+					},
+		});
+});
+</script>
+</head>
+
+<body>
+ 	<div class="idx_header_nav">
+    	<div class="nav_logo">
+        	<a href="#">
+            	<img src="images/logo.png" width="120" height="36">
+            </a>
+       </div>
+        <div class="fl nav_tit">
+           <ul class="fl">
+              <li><a href="index.html" target="_blank" style="color:#FF3">首页</a></li>
+              <li><a href="termini.html" target="_blank">目的地</a></li>
+              <li><a href="free.html" target="_blank">随享游</a></li>
+              <li><a href="strategy.html" target="_blank">秘籍</a></li>
+              <li class="nav_list">
+                  <a href="#">预定ˇ</a>
+                      <ul>
+                      <li><a href="#">机票</a></li>
+                      <li><a href="hotel.html" target="_blank">酒店</a></li>
+                      <li><a href="#">团购</a></li>
+                  </ul>
+              </li>
+           </ul>
+        </div>
+       	<div class="fr bn_login">
+        	<a href="login.html">登录</a>丨<a href="register.html">注册</a>
+        </div>
+        <div class="bn_login_pic fr">
+           	<a href="#"><span class="bn_login_sp01 fl"></span></a>
+            <a href="#"><span class="bn_login_sp02 fl"></span></a>
+        </div>
+    </div>
+                     <!-------------------- 以上是top内容----------------->
+               
+ <div class="login-box">
+	<h1>会员注册</h1>
+	<form action="save.jsp" id="reg">
+		<div class="name">
+			<label>账号：</label>
+			<input type="text" name="account" />
+		</div>
+		<div class="password">
+			<label>密码：</label>
+			<input type="password" name="password" maxlength="16" tabindex="2"/>
+		</div>
+        <div class="name">
+			<label>确认密码：</label>
+			<input type="text" name="confirm_password" />
+		</div>
+          <div class="name">
+			<label>邮箱：</label>
+			<input type="email" name="email" />
+		</div>
+		<div class="login"  style="margin-top:30px;">
+			<button type="submit" tabindex="5" class="lg_button">注册</button>
+		</div>
+	</form>
+
+</div>
+<div class="bottom">©2015 随享游 <a href="javascript:;" target="_blank">关于</a> <span>京ICP证1888888号</span></div>
+
+<div class="screenbg">
+	<ul>
+		<li><a href="javascript:;"><img src="images/login_bg01.jpg"></a></li>
+		<li><a href="javascript:;"><img src="images/login_bg02.jpg"></a></li>
+		<li><a href="javascript:;"><img src="images/login_bg03.jpg"></a></li>
+	</ul>
+</div>
+
+                     <!---------------以上是底部内容------------------------->
+</body>
+<script>
+$(".tmn_main").slide({effect:"leftLoop",trigger:"click"});
+</script>
+<script type="text/javascript">
+$("#free_top").cxSlide({
+	events:"mouseover",
+	type:"fade",  /*可更换值  “x” 或 “y” 或 “fade” 或 “toggle” x滚动记得改样式*/
+	speed:300
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	$(".screenbg ul li").each(function(){
+		$(this).css("opacity","0");
+	});
+	$(".screenbg ul li:first").css("opacity","1");
+	var index = 0;
+	var t;
+	var li = $(".screenbg ul li");	
+	var number = li.size();
+	function change(index){
+		li.css("visibility","visible");
+		li.eq(index).siblings().animate({opacity:0},3000);
+		li.eq(index).animate({opacity:1},3000);
+	}
+	function show(){
+		index = index + 1;
+		if(index<=number-1){
+			change(index);
+		}else{
+			index = 0;
+			change(index);
+		}
+	}
+	t = setInterval(show,8000);
+	//根据窗口宽度生成图片宽度
+	var width = $(window).width();
+	$(".screenbg ul img").css("width",width+"px");
+});
+</script>
+</html>

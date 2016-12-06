@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>随享游网-目的地页</title>
+<link href="css/master.css" rel="stylesheet">
+<link href="font/iconfont.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen">
+<link href="css/animate.css" rel="stylesheet">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/jquery.termini.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+//Slider
+jQuery(window).load(function() {
+	jQuery('#tmn_bn').nivoSlider({
+	effect: 'fold',
+	slices:15,
+	animSpeed:500, //Slide transition speed
+	pauseTime:5000,
+	controlNav: false,
+	directionNavHide: false,
+	prevText: 'prev',
+	nextText: 'next',
+	startSlide:0, //Set starting Slide (0 index)
+	directionNav:true, //Next &amp; Prev
+	afterLoad: function(){
+		jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+		},
+		beforeChange: function(){
+		jQuery(".nivo-caption").animate({top:"-300"}, {easing:"easeInBack", duration: 500})
+		},
+		afterChange: function(){
+		jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+		}
+	});
+	
+});
+
+</script>
+</head>
+<body>
+
+ 	<div class="idx_header_nav">
+    	<div class="nav_logo">
+        	<a href="#">
+            	<img src="images/logo.png" width="120" height="36">
+            </a>
+       </div>
+        <div class="fl nav_tit">
+           <ul class="fl">
+              <li><a href="index.html" target="_blank">首页</a></li>
+              <li><a href="termini.html" target="_blank" style="color:#FF3">目的地</a></li>
+              <li><a href="free.html" target="_blank">随享游</a></li>
+              <li><a href="strategy.html" target="_blank">秘籍</a></li>
+              <li class="nav_list">
+                  <a href="#">预定ˇ</a>
+                      <ul>
+                      <li><a href="#">机票</a></li>
+                      <li><a href="hotel.html" target="_blank">酒店</a></li>
+                      <li><a href="#">团购</a></li>
+                  </ul>
+              </li>
+           </ul>
+        </div>
+       	<div class="fr bn_login">
+        	<a href="login.html">登录</a>丨<a href="register.html">注册</a>
+        </div>
+        <div class="bn_login_pic fr">
+           	<a href="#"><span class="bn_login_sp01 fl"></span></a>
+            <a href="#"><span class="bn_login_sp02 fl"></span></a>
+        </div>
+    </div>
+
+		<!------------------------以上是nav内容---------------------->
+		
+<div id="tmn_bg">
+
+	<div id="tmn_bn" class="nivoSlider">
+	<img title="#htmlcaption1" alt="" src="images/tmn_bn01.jpg" width="100%" height="500">
+	<img title="#htmlcaption2" alt="" src="images/tmn_bn02.jpg" width="100%" height="500">
+	<img title="#htmlcaption3" alt="" src="images/tmn_bn03.jpg" width="100%" height="500">
+	<img title="#htmlcaption4" alt="" src="images/tmn_bn04.jpg" width="100%" height="500">
+    <img title="#htmlcaption5" alt="" src="images/tmn_bn05.jpg" width="100%" height="500">
+	</div><!-- #slider -->
+	
+	<div id="htmlcaption1" class="nivo-html-caption">
+
+		<h1>印度尼西亚的火山</h1>
+
+		<p>印度尼西亚共和国（印尼语：Republik Indonesia，英语：The Republic of Indonesia），简称印度尼西亚或印尼，是东南亚国家。由约17508个岛屿组成，是全世界最大的群岛国家，疆域横跨亚洲及大洋洲，别称“千岛之国”，也是多火山多地震的国家，首都为雅加达。与巴布亚新几内亚、东帝汶和马来西亚等国家相接</p>
+	</div>
+	
+	<div id="htmlcaption2" class="nivo-html-caption">
+		<h1>挑战极地</h1>
+
+		<p>极地长征由Mary Gadams在香港创立于2002年2月。Mary在创立比赛之前已经完成了数不尽的马拉松，百公里赛，定向越野赛，铁人三项等等比赛。第一场比赛是2003年的敦煌，接下去的2004年加入了智力阿塔卡马沙漠以及撒哈拉沙漠，最终于2006年加入的南极站使得整个赛事变的更加完整。 </p>
+	</div>
+	
+	<div id="htmlcaption3" class="nivo-html-caption">
+		<h1>龟峰</h1>
+
+		<p>龟峰是世界地质公园龙虎山-龟峰地质公园和世界自然遗产"中国丹霞"的组成部分，位于弋阳县城南信江南岸，东距上饶60km，西距鹰潭35km，地处三清山、龙虎山和武夷山之间。因其"无山不龟，无石不龟"，且整座山体就像一只硕大无朋的昂首巨龟而得其名。</p>
+	</div>
+	
+	<div id="htmlcaption4" class="nivo-html-caption">
+		<h1>粉红清真寺</h1>
+
+		<p>在粉红清真寺的夏宫，清晨8点到10点是最美的，早晨温暖的光线正好斜着照在巨大的彩色玻璃窗上，向波斯地毯上投下了美妙神奇的色彩和光影组合。她只在阳光灿烂的清晨，才展现出自己最美的一面。</p>
+	</div>
+    
+    	<div id="htmlcaption5" class="nivo-html-caption">
+		<h1>西西里岛</h1>
+
+		<p>西西里岛位于南部，地中海中部，形状类似一个三角形，东北端隔3千米宽的墨西拿海峡与亚平宁半岛相望，岛上多丘陵，地处典型的地中海气候，冬季温暖潮湿，而夏季则干燥炎热，沿海地区，尤其是西南方的部分，气候也受到非洲大陆影响所以夏天更为酷热。最高温可达48℃。</p>
+	</div>
+	
+</div>
+ 
+    <div class="termini_hdleft">
+   	  <ul>
+        	<li>
+            	<div class="hdleft_top" style="border:none"><a href="#"><span class="iconfont">&#xf019b;</span>&nbsp;自然</a></div>
+                <a href="#">西双版纳</a>
+                <a href="#">千岛湖</a>
+                <a href="#">富士山</a>
+                <a href="#">阿拉斯加</a>
+                <a href="#">毛里求斯</a>
+            </li>
+            <li>
+            	<div class="hdleft_top"><a href="#"><span class="iconfont">&#xe60b;</span>&nbsp;人文</a></div>
+                <a href="#">比萨斜塔</a>
+                <a href="#">梵蒂冈</a>
+                <a href="#">泰姬陵</a>
+                <a href="#">颐和园</a>
+                <a href="#">庞贝古城</a>
+            </li>
+            <li>
+            	<div class="hdleft_top"><a href="#"><span class="iconfont">&#xe600;</span>&nbsp;运动</a></div>
+                <a href="#">玉龙雪山</a>
+                <a href="#">珠穆朗玛峰</a>
+                <a href="#">甲米攀岩</a>
+                <a href="#">澳门蹦极</a>
+                <a href="#">加拿大滑雪</a>
+            </li>
+            <li>
+            	<div class="hdleft_top"><a href="#"><span class="iconfont">&#xe60c;</span>&nbsp;爱情</a></div>
+                <a href="#">希腊</a>
+                <a href="#">马尔代夫</a>
+                <a href="#">摩纳哥</a>
+                <a href="#">丽江古镇</a>
+                <a href="#">三亚</a>
+            </li>
+            <li>
+            	<div class="hdleft_top"><a href="#"><span class="iconfont">&#xe63f;</span>&nbsp;心灵</a></div>
+                <a href="#">西藏</a>
+                <a href="#">大金庙</a>
+                <a href="#">圣地亚哥</a>
+                <a href="#">斯里兰卡</a>
+                <a href="#">蒂卡波湖</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+                     <!-------------------- 以上是top内容----------------->
+   	<div class="termini_news">
+    	<ul>
+        	<li class="wow fadeInUp animated" data-wow-delay="0.1s">
+            	<a href="#"><img src="images/bannerlefr.png"></a>
+                <span class="newspan"><a href="#"></a></span>
+            </li>
+            <li class="wow fadeInUp animated" data-wow-delay="0.2s">
+            	<a href="#"><img src="images/baner.jpg"></a>
+                <span class="newspan"><a href="#"></a></span>
+            </li>
+            <li class="wow fadeInUp animated" data-wow-delay="0.3s">
+            	<a href="#"><img src="images/bannerm.jpg"></a>
+                <span class="newspan"><a href="#"></a></span>
+            </li>
+            <li class="wow fadeInUp animated" data-wow-delay="0.4s">
+            	<a href="#"><img src="images/bnerl.jpg"></a>
+                <span class="newspan"><a href="#"></a></span>
+            </li>
+        </ul>
+    </div>
+                              <!--以上是新闻-->
+          	<div class="tmn_maintitch">
+            	<h5>心中的魂牵梦绕之地</h5>
+            </div>
+            <div class="tmn_maintiteg">
+            	<i>Dream in the heard</i>
+            </div> 
+     <div class="tmn_main">
+			<div class="tmn_maintit">
+				<ul>
+                	<li>热门目的地</li>
+                    <li>国内目的地</li>
+                    <li>国外目的地</li>
+                </ul>
+			</div>
+            <ul class="tmn_mainlist">                
+                <li>
+                    <a href="#">
+                    	<img src="images/tmn_qingmai.png" width="700" height="330">
+                        <span>
+                        	<h6>清迈</h6>
+                            <p>泰国北部第一大城，清迈府首府。泰北政治、经济、文化中心。位于宾河人口10.2万 （1980）。市郊土地肥沃，农产富饶。1296年起曾为兰那王朝（或称“南掌”）都城。旧城在河西，新城在河东，有两座桥梁相连。以手工艺著名，[5]  有珠宝首饰、银器、陶器、木雕、丝绸等。工业有柚木初步加工和锯木等。交通发达，为北线铁路终点站，距曼谷752公里。设有机场。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_sanya.jpg" width="340" height="330">
+                      	<span>
+                        	<h6>三亚</h6>
+                            <p>亚龙湾位于中国最南端的热带滨海旅游城市--三亚市东南28公里处，是海南最南端的一个半月形海湾，全长约7.5公里，是海南名景之一。亚龙湾沙滩绵延7公里且平缓宽阔，浅海区宽达50-60米。终年可游泳，被誉为“天下第一湾”。“三亚归来不看海，除却亚龙不是湾”的美誉吸引了每年数以千万计的国内外游客 ！</p>
+                        </span>
+                    </a>
+                    <a href="#" style="margin-right:20px">
+                    	<img src="images/tmn_xiangggang.jpg" width="340" height="330">
+                        <span>
+                        	<h6>香港</h6>
+                            <p>香港岛上的文武庙、铜锣湾天后庙、圣约翰大教堂；九龙的黄大仙祠墓、侯王庙、慈云山观音庙、九龙清真寺；沙田的万佛寺、车公庙、蓬瀛仙馆、半园春、道风山基督教堂；荃湾的竹林禅院、东普陀、荃湾天后庙；云浮仙观；西贡的佛堂天后庙、蚝涌车公庙以及大屿山宝莲寺、长洲北帝庙、坪州天后庙等。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_shouer.jpg" width="340" height="330">
+                        <span>
+                        	<h6>首尔</h6>
+                            <p>首尔是朝鲜王朝600年间的都城，有众多古迹。朝鲜时代的宫殿、宗庙和其他建筑有景福宫、昌德宫、秘苑、昌庆宫、庆熙宫、德寿宫、云岘宫、宗庙、社稷、成均馆、南大门、东大门、汉城城墙、南汉山城、北汉山城、贞陵、洪陵、宣靖陵、献仁陵、泰康陵等等。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_dongjing.jpg" width="340" height="330">
+                        <span>
+                        	<h6>东京</h6>
+                            <p>东京古称江户，是日本自德川幕府时代以来的主要都市之一，明治维新迁都江户，改名东京，自此成为日本首都。后逐渐发展成为日本政治、经济、文化、交通等众多领域的枢纽中心，亦为世界经济发展度与富裕程度最高的都市之一。东京是亚洲第一大城市，世界第二大城市，全球最大的经济中心之一。</p>
+                        </span>
+                   	</a>
+                </li>
+                <li>
+               		<a href="#">
+                    	<img src="images/tmn_xisahungbanan.jpg" width="700" height="330">
+                        <span>
+                        	<h6>西双版纳</h6>
+                            <p>“西双”是傣语“12”的意思，“版纳”是指比县小一些的行政区域，“西双版纳”意为“十二个行政区”。西双版纳，古代傣语为“勐巴拉娜西”，意思是“理想而神奇的乐土”，这里以神奇的热带雨林自然景观和少数民族风情而闻名于世，是中国的热点旅游城市之一。每年的泼水节于4月13-15日举行，被誉为“东方狂欢节”。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_yunnan.jpg" width="340" height="330">
+                      	<span>
+                        	<h6>云南</h6>
+                            <p>云南即“彩云之南”“七彩云南”，另一说法是因位于“云岭之南”而得名。面积39万平方千米，占全国面积4.11%，在全国各省级行政区中面积排名第8。总人口4596万（2010年），占全国人口3.35%，人口排名为第12名。下辖8个市、8个少数民族自治州。</p>
+                        </span>
+                    </a>
+                    <a href="#" style="margin-right:20px">
+                    	<img src="images/tmn_lijiang.jpg" width="340" height="330">
+                        <span>
+                        	<h6>丽江</h6>
+                            <p>丽江古城有着绚丽丰富多彩的地方民族习俗和娱乐活动，纳西古乐、东巴仪式、占卜文化、古镇酒吧以及纳西族火把节等等，别具一格。丽江古城充分体现了中国古代城市建设的成就，是中国民居中具有鲜明特色和风格的类型之一。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_yuntaishan.jpg" width="340" height="330">
+                        <span>
+                        	<h6>云台山</h6>
+                            <p>云台山内地质遗迹丰富，30亿年来，形成了太古宇、元古宇、古生界和新生界地层；多次的构造运动，尤其是2300万年以来，新构造运动的强烈抬升和水蚀作用的深度下切，造就了云台山双崖对峙的峡谷群和各种动态的瀑、泉、溪、潭，共同构成了旷奥兼具的“云台地貌”景观。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_chengdu.jpg" width="340" height="330">
+                        <span>
+                        	<h6>成都</h6>
+                            <p>成都是“首批国家历史文化名城”和“中国最佳旅游城市”，承载着三千余年的历史，拥有都江堰、武侯祠、杜甫草堂、金沙遗址、明蜀王陵、望江楼、青羊宫等众多名胜古迹和人文景观。</p>
+                        </span>
+                   	</a>
+                </li>
+                <li>
+                    <a href="#">
+                    	<img src="images/tmn_moerben.jpg" width="700" height="330">
+                        <span>
+                        	<h6>墨尔本</h6>
+                            <p>墨尔本（Melbourne）是澳大利亚维多利亚州的首府、澳大利亚联邦第二大城市，澳洲文化、工业中心，是南半球最负胜名的文化名城。墨尔本曾是澳大利亚联邦的首都，城市绿地率高达40%。大墨尔本地区面积达到3,400平方英里（8806平方公里），是南半球较广大的都会区之一。墨尔本城市环境非常优雅，曾荣获联合国人居奖，并连续多年被联合国人居署评为“全球最适合人类居住的城市”。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_daban.jpg" width="340" height="330">
+                      	<span>
+                        	<h6>大阪</h6>
+                            <p>“大阪”在古代多称为“大坂”，而“大坂”一词最早出现在室町时代。自奈良时代开始，大阪就因其临海的地理位置成为贸易港口。丰臣秀吉修建大阪城，并以大阪作为丰臣政权的统治核心城市。在江户时代，大阪和京都江户并称为“三都”，是当时日本经济活动最为旺盛的商业都市。在战后，仍是西日本的大都市。</p>
+                        </span>
+                    </a>
+                    <a href="#" style="margin-right:20px">
+                    	<img src="images/tmn_niuyue.jpg" width="340" height="330">
+                        <span>
+                        	<h6>纽约</h6>
+                            <p>
+纽约（New York），是纽约都会区的核心，也是美国最大城市。为了与其所在的纽约州相区分，被称为纽约市。纽约位于美国东海岸的东北部，是美国人口最多的城市，也是个多族裔聚居的多元化城市。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_lasiweijiasi.jpg" width="340" height="330">
+                        <span>
+                        	<h6>拉斯维加斯</h6>
+                            <p>拉斯维加斯（Las Vegas） 是美国内华达州的最大城市，以赌博业为中心的庞大的旅游、购物、度假产业而著名，世界上十家最大的度假旅馆就有九家是在这里，是世界知名的度假圣地之一，拥有“世界娱乐之都”和“结婚之都”的美称。</p>
+                        </span>
+                    </a>
+                    <a href="#">
+                    	<img src="images/tmn_huilingdun.jpg" width="340" height="330">
+                        <span>
+                        	<h6>惠灵顿</h6>
+                            <p>惠灵顿附近群山连绵，满目苍翠，碧海青天，景色季丽。气候温和，四季如春。惠灵顿气候温和湿润，是南太平洋地区著名的旅游胜地，人口约45万，与澳大利亚的悉尼和墨尔本同为大洋洲的文化中心。</p>
+                        </span>
+                   	</a>
+                </li>
+            </ul>
+		</div>
+           <!-------------------以上是目的地主体内容------------------------------- -->  
+       	<div class="tmn_maintitch">
+            <h5>分享你梦的彼岸</h5>
+        </div>
+      	<div class="tmn_maintiteg">
+           	<i>Share your drams</i>
+        </div>
+        <div class="tmn_sharebg">
+            <div class="tmn_share clear">
+                <div class="tmna_shareleft"><img src="images/kaisien 0.jpeg" width="600" height="300"></div>
+                <h3 class="fl"><a href="#">路飞</a>发表了：<a href="#">澳大利亚黄金海岸迷人的海滩，度假者游玩的天堂。</a></h3>
+                <p class="fl"><a href="#">黄金海岸是澳大利亚的假日游乐胜地，位于澳大利亚的东部沿海。这里有明媚的阳光、连绵的白色沙滩、湛蓝透明的海水、浪漫的棕榈林，来这里旅游度假的人们更为这里增添了不少生机和动感。黄金海岸的中心就是冲浪者天堂（Surfers Paradise）。</a></p>
+                <div class="tmn_shareft fr">
+                	<a href="#">612人阅读过</a>
+                    <a href="#">302人觉得赞</a>
+                    <a href="#">216人收藏过</a>
+                </div>
+                <div class="fl tmn_sharebtm">
+                	<div class="fl" style="margin-top:8px">
+                    	<img src="images/tmn_lufei.jpg" width="80" height="70">
+                    </div>
+                    <h5 class="fl"><a href="#">我的梦想就是环游世界,走遍世界的每个角落。</a></h5>
+                    <h6 class="fr"><a href="#">加关注</a></h6>
+                </div>
+                <div class="tmn_sharelist">
+                	<div class="tmna_sharelistlt"><img src="images/tmn_xindeli.jpg" width="240" height="200"></div>
+                    <h3 class="fl"><a href="#">凯瑟琳</a>发表了：<a href="#">来到印度，体验差异明显的新德里</a></h3>
+                    <p class="fl"><a href="#">新德里是一座典型的放射型城市，城市以姆拉斯广场为中心，城市街道成辐射状、蛛网式地伸向四面八方。宏伟的建筑群大多集中于市中心。政府主要机构集中在市区从总统府到印度门之间绵延几公里的宽阔大道两旁。</a></p>
+                    <div class="fl tmn_sharelistbtm">
+                        <div class="fl" style="margin-top:8px">
+                            <img src="images/tmn_touxiang01.jpg" width="50" height="50">
+                        </div>
+                        <h5 class="fl"><a href="#">真理惟一可靠的标准就是永远自相符合。</a></h5>
+                        <h6 class="fr"><a href="#">加关注</a></h6>
+                    </div>
+                </div>
+                <div class="tmn_sharelist">
+                	                	<div class="tmna_sharelistlt"><img src="images/tmn_sililanka.jpg" width="240" height="200"></div>
+                    <h3 class="fl"><a href="#">流星</a>发表了：<a href="#">一个人旅行，并不孤单的斯里兰卡</a></h3>
+                    <p class="fl"><a href="#">斯里兰卡旅游业是斯经济的重要组成部分。游客主要来自欧洲、印度、东南亚等国家和地区。2003-2005年，斯连续三年到访外国游客数量突破50万人。</a></p>
+                    <div class="fl tmn_sharelistbtm">
+                        <div class="fl" style="margin-top:8px">
+                            <img src="images/tmn_touxaing02.jpg" width="50" height="50">
+                        </div>
+                        <h5 class="fl"><a href="#">时间是一切财富中最宝贵的财富。。</a></h5>
+                        <h6 class="fr"><a href="#">加关注</a></h6>
+                    </div>
+                </div>
+                <div class="tmn_sharelist">
+                	                	<div class="tmna_sharelistlt"><img src="images/tmn_bolin.jpg" width="240" height="200"></div>
+                    <h3 class="fl"><a href="#">阿狸</a>发表了：<a href="#">欢迎来到德国首都，柏林</a></h3>
+                    <p class="fl"><a href="#">柏林位于德国东北部，四面被勃兰登堡州环绕，施普雷河和哈维尔河流经该市。柏林是德国十六个联邦州之一，和汉堡、不来梅同为德国仅有的三个的城市州。</a></p>
+                    <div class="fl tmn_sharelistbtm">
+                        <div class="fl" style="margin-top:8px">
+                            <img src="images/tmn_touxaing03.jpg" width="50" height="50">
+                        </div>
+                        <h5 class="fl"><a href="#">友谊是一棵可以庇荫的树。</a></h5>
+                        <h6 class="fr"><a href="#">加关注</a></h6>
+                    </div>
+                </div>
+                <div class="tmn_sharelist">
+                	                	<div class="tmna_sharelistlt"><img src="images/tmn_hugeku.jpg" width="240" height="200"></div>
+                    <h3 class="fl"><a href="#">Hope</a>发表了：<a href="#">神秘的吴哥窟</a></h3>
+                    <p class="fl"><a href="#">12世纪时，吴哥王朝国王苏耶跋摩二世（Suryavarman II）希望在平地兴建一座规模宏伟的石窟寺庙，作为吴哥王朝的国都和国寺。因此举全国之力，并花了大约35年建造。它是吴哥古迹中保存得最完好的建筑，以建筑宏伟与浮雕细致闻名于世。</a></p>
+                    <div class="fl tmn_sharelistbtm">
+                        <div class="fl" style="margin-top:8px">
+                            <img src="images/tmn_touxaing04.jpg" width="50" height="50">
+                        </div>
+                        <h5 class="fl"><a href="#">沉舟侧畔千帆过，病树前头万木春</a></h5>
+                        <h6 class="fr"><a href="#">加关注</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--------------------以上是分享内容 --------------------->
+        <div class="tmn_maintitch">
+            <h5>探寻整个世界</h5>
+        </div>
+      	<div class="tmn_maintiteg">
+           	<i>Search the world</i>
+        </div>
+        <div class="tmn_world clear">
+        	<ul>
+            	<li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe60b;</span></h5>
+                    <h6>亚洲</h6>
+                    <a href="#">中国</a>
+                    <a href="#">韩国</a>
+                    <a href="#">日本</a>
+                    <a href="#">越南</a>
+                    <a href="#">老挝</a>
+                    <a href="#">更多</a>
+                </li>
+                <li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe60a;</span></h5>
+                    <h6>欧洲</h6>
+                    <a href="#">英国</a>
+                    <a href="#">法国</a>
+                    <a href="#">德国</a>
+                    <a href="#">俄罗斯</a>
+                    <a href="#">西班牙</a>
+                    <a href="#">更多</a>
+                </li>
+                <li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe605;</span></h5>
+                    <h6>非洲</h6>
+                    <a href="#">尼日利亚</a>
+                    <a href="#">刚果</a>
+                    <a href="#">阿尔及利亚</a>
+                    <a href="#">马达加斯加</a>
+                    <a href="#">俄塞俄比亚</a>
+                    <a href="#">更多</a>
+                </li>
+                <li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe602;</span></h5>
+                    <h6>北美洲</h6>
+                    <a href="#">美国</a>
+                    <a href="#">加拿大</a>
+                    <a href="#">多米尼克</a>
+                    <a href="#">墨西哥</a>
+                    <a href="#">古巴</a>
+                    <a href="#">更多</a>
+                </li>
+                <li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe609;</span></h5>
+                    <h6>南美洲</h6>
+                    <a href="#">阿根廷</a>
+                    <a href="#">巴西</a>
+                    <a href="#">秘鲁</a>
+                    <a href="#">巴拉圭</a>
+                    <a href="#">哥伦比亚</a>
+                    <a href="#">更多</a>
+                </li>
+                <li>
+                	<h5><span class="iconfont" style="font-size:100px">&#xe604;</span></h5>
+                    <h6>大洋洲</h6>
+                    <a href="#">新西兰</a>
+                    <a href="#">澳大利亚</a>
+                    <a href="#">斐济</a>
+                    <a href="#">大溪地</a>
+                    <a href="#">帕劳</a>
+                    <a href="#">更多</a>
+                </li>
+            </ul>
+        </div>
+        <div class="btm">
+     	<div class="btm_mid">
+     	<ul>
+        	<li class="btm_list"><a href="#"><span>关于我们</a></li>
+           <li><a href="#">随享游简介</a></li>
+           <li><a href="#">联系我们</a></li>
+           <li><a href="#">合作伙伴</a></li>
+        </ul>
+        <ul>
+        	<li class="btm_list"><a href="#">网站条款</a></li>
+            <li><a href="#">会员条款</a></li>
+            <li><a href="#">社区指南</a></li>
+            <li><a href="#">版权声明</a></li>
+             <li><a href="#">免责声明</a></li>
+        </ul>
+        <ul>
+        	<li class="btm_list"><a href="#">帮助中心</a></li>
+            <li><a href="#">新手上路</a></li>
+            <li><a href="#">使用帮助</a></li>
+            <li><a href="#">网站地图</a></li>
+        </ul>
+        <div class="fl" style="margin-top:22px"><a href="#"><img src="images/partner.png"></a></div>
+        </div>
+     </div>
+     <div class="footer">
+     	<div class="footer01">2004-2015 © 随享游网™ All rights reserved. Version v5.57  京ICP备1888888号  京公网安备000000  京ICP证666888号
+随享游网为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、机票、酒店预订等服务。</div>
+     </div>
+     
+	<!------------------------以上是底部内容---------------------->
+    <div id="gotop">
+    	<img src="images/iconfont-fanhuidingbu.png" width="50" height="50" title="返回顶部">
+    </div>
+</body>
+
+<script>
+$(".tmn_main").slide({effect:"leftLoop",trigger:"click"});
+</script>
+<script>
+$(function(){
+	$(window).scroll(function(){
+		var t = $(window).scrollTop();
+		if(t>600){
+			$('#gotop').show('fast');	
+		}else{
+			$('#gotop').hide('fast');	
+		}
+	});
+	
+	$('#gotop').click(function(){
+		$('html,body').animate({scrollTop:0},'fast');	
+	});
+});
+</script>
+</html>
